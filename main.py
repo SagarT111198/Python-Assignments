@@ -24,17 +24,12 @@ print(prime_numbers)
 
 
 # Print user input table
-def print_table_of_2(limit):
-    for i in range(1, limit + 1):
-        result = 2 * i
-        print(f"2 x {i} = {result}")
+num = int(input("Enter a number: "))
 
-
-try:
-    user_input = int(input("Enter the limit for the table of 2: "))
-    print_table_of_2(user_input)
-except ValueError:
-    print("Invalid input. Please enter a valid integer.")
+print("Multiplication Table for {num}:")
+for i in range(1, 11):
+    result = num * i
+    print(f"{num} * {i} = {result}")
 
 
 #  Print palindrome string taking input as string
